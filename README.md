@@ -1,4 +1,4 @@
-## gRPC proto validate generator
+## PGV buf example
 
-* `mvn compile`
-* Use `HelloWorldServerWithInterceptor` Which is more idiomatic gRPC Way which works with gRPC Interceptors 
+##### Steps to reproduce
+* `mvn clean package -DskipTests`
