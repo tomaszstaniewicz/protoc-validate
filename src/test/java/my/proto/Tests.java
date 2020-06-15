@@ -5,7 +5,6 @@ import io.envoyproxy.pgv.ReflectiveValidatorIndex;
 import io.envoyproxy.pgv.ValidationException;
 import io.envoyproxy.pgv.ValidatorIndex;
 import io.grpc.examples.helloworld.HelloRequest;
-import java.util.Arrays;
 import org.junit.Test;
 
 public class Tests {
@@ -13,7 +12,7 @@ public class Tests {
     @Test
     public void testIfValidationWorks() throws ValidationException {
         HelloRequest message = HelloRequest.newBuilder()
-            .addAllField1(Arrays.asList("alama", "makota"))
+            //.addAllField1(Arrays.asList("alama", "makota"))
             .build();
 
         validate(message);
